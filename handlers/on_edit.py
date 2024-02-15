@@ -6,5 +6,5 @@ router = Router()
 
 
 @router.edited_message()
-async def start(message: Message):
+async def on_edit(message: Message):
     await message.answer("Вы редактировали сообщение!")
